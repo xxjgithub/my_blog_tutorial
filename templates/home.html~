@@ -32,7 +32,6 @@
 		{% endif %}
 		</ul>
 		</div>
-	{% endif %}
 </div><!-- /.blog-post -->
 {% endblock %}
 

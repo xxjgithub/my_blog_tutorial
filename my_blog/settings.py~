@@ -24,12 +24,10 @@ SECRET_KEY = '3%8a%^55wxy4v9yt^9t*yo@v&n$@=v-kn2m!7d%ck7%vd414ip'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
-TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
-TEMPLATES = (
-	...
-	DIRS: [TEMPLATE_PATH],
-	APP_DIRS: False
-)
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates').replace('\\', '/'),
+    )
 
 ALLOWED_HOSTS = []
 
